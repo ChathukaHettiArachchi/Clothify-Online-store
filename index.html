@@ -8,8 +8,8 @@
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Tailwind Config (optional customization) -->
+   
+    
     <script>
         tailwind.config = {
             theme: {
@@ -36,7 +36,7 @@
             <ul class="hidden md:flex space-x-8 font-medium">
                 <li><a href="#" class="hover:text-gray-600">Home</a></li>
                 <li><a href="#products" class="hover:text-gray-600">Shop</a></li>
-                <li><a href="#" class="hover:text-gray-600">About</a></li>
+                <li><a href="#about" class="hover:text-gray-600">About</a></li>
                 <li><a href="#" class="hover:text-gray-600">Contact</a></li>
             </ul>
 
@@ -71,7 +71,7 @@
     </section>
 
     <!-- PRODUCTS -->
-    <section id="products" class="py-16 bg-gray-50">
+    <section id="products" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">New Arrivals</h2>
 
@@ -79,13 +79,15 @@
 
                 <!-- Product -->
                 <div
-                    class="bg-white rounded-lg overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-2">
-                    <img src="images/product1.jpg" alt="Product" class="w-full h-72 object-cover">
+                    class="bg-white rounded-lg border-2 border-blue-800 overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="flex justify-center h-72">
+                    <img src="images/product1.jpg" alt="Product" class="max-w-7xl inline h-72 mt-2 mx-auto">
+                    </div>
                     <div class="p-4 text-center">
                         <h5 class="font-semibold mb-2">Men's Casual Shirt</h5>
                         <p class="font-bold mb-4">$39.99</p>
                         <button
-                            class="w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition">
+                            class="w-full bg-blue-800 text-white py-2 rounded hover:bg-blue-900 transition">
                             Add to Cart
                         </button>
                     </div>
@@ -106,7 +108,7 @@
 
                 <div
                     class="bg-white rounded-lg overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-2">
-                    <img src="images/product1.jpg" alt="Product" class="w-full h-72 object-cover">
+                    <img src="images/product3.jpg" alt="Product" class="w-full h-72 object-cover">
                     <div class="p-4 text-center">
                         <h5 class="font-semibold mb-2">Unisex Hoodie</h5>
                         <p class="font-bold mb-4">$59.99</p>
@@ -118,8 +120,8 @@
                 </div>
 
                 <div
-                    class="bg-white rounded-lg overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-2">
-                    <img src="images/product1.jpg" alt="Product" class="w-full h-72 object-cover">
+                    class="bg-white rounded-lg overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-2">SKU : 12345
+                    <img src="images/product4.jpg" alt=" " class="w-full h-72 object-cover">
                     <div class="p-4 text-center">
                         <h5 class="font-semibold mb-2">Men's Casual Shirt</h5>
                         <p class="font-bold mb-4">$39.99</p>
@@ -132,7 +134,7 @@
 
                 <div
                     class="bg-white rounded-lg overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-2">
-                    <img src="images/product2.jpg" alt="Product" class="w-full h-72 object-cover">
+                    <img src="images/product5.jpg" alt="Product" class="w-full h-72 object-cover">
                     <div class="p-4 text-center">
                         <h5 class="font-semibold mb-2">Women's Summer Dress</h5>
                         <p class="font-bold mb-4">$49.99</p>
@@ -145,7 +147,7 @@
 
                 <div
                     class="bg-white rounded-lg overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-2">
-                    <img src="images/product1.jpg" alt="Product" class="w-full h-72 object-cover">
+                    <img src="images/product6.jpg" alt="Product" class="w-full h-72 object-cover">
                     <div class="p-4 text-center">
                         <h5 class="font-semibold mb-2">Unisex Hoodie</h5>
                         <p class="font-bold mb-4">$59.99</p>
@@ -160,21 +162,35 @@
         </div>
     </section>
 
+
+
+    <!-- About -->
+
+    <section id="about" class="bg-white mb-8">
+        <div class="abouttitle "><h2 class="text-3xl font-bold text-center mb-4">About Us</h2></div>
+        <div class="aboutcontent">
+            <div class="max-w-7xl px-8 mx-auto py-8">
+                <p class="text-center bg-gray-400 mx-w-7xl">Welcome to Clothify, your one-stop destination for all your fashion needs. We are dedicated to providing high-quality clothing and accessories at affordable prices.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
     <!-- FOOTER -->
     <footer class="bg-black text-white text-center py-6">
         <p>&copy; 2025 Clothify. All Rights Reserved.</p>
     </footer>
 
     
-    <script>
-        const btn = document.getElementById("menuBtn");
-        const menu = document.getElementById("mobileMenu");
+    
 
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
-
+    <script src="Script.js"></script>
 </body>
 
 </html>
