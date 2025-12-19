@@ -4,3 +4,10 @@
         btn.addEventListener("click", () => {
             menu.classList.toggle("hidden");
         });
+
+
+        
+        // function for direct to inventory page
+        function goToInventory(category) {
+    window.location.href = `inventory.html?category=${category}`;
+  }
