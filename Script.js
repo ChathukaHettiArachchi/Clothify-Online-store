@@ -11,3 +11,6 @@
         function goToInventory(category) {
     window.location.href = `inventory.html?category=${category}`;
   }
+
+
+  
