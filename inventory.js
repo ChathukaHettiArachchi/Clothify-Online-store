@@ -21,25 +21,25 @@ document.getElementById("inventoryTitle").innerText =
   
   
   
-//   const inventoryGrid = document.getElementById("inventoryGrid");
+  const inventoryGrid = document.getElementById("inventoryGrid");
 
-// const products = {
-//   gents: ["Shirt", "Jeans", "T-Shirt"],
-//   ladies: ["Dress", "Top", "Skirt"],
-//   kids: ["Kids Shirt", "Kids Shorts"],
-//   "mothers-baby": ["Baby Dress", "Feeding Wear"],
-//   bags: ["Backpack", "Travel Bag"],
-//   wearables: ["Watch", "Smart Band"]
-// };
+const products = {
+  gents: ["Shirt", "Jeans", "T-Shirt"],
+  ladies: ["Dress", "Top", "Skirt"],
+  kids: ["Kids Shirt","Skinnies" ,"Kids shorts","toys","shoes","Kids Shirt","Skinnies" ,"Kids shorts","toys","shoes"],
+  "mothers-baby": ["Baby Dress", "Feeding Wear"],
+  bags: ["Backpack", "Travel Bag"],
+  wearables: ["Watch", "Smart Band"]
+};
 
-// (products[category] || []).forEach(item => {
-//   const card = document.createElement("div");
-//   card.className = "bg-white p-4 rounded shadow";
+(products[category] || []).forEach(item => {
+  const card = document.createElement("div");
+  card.className = "bg-white p-4 rounded shadow cursor-pointer hover:shadow-xl transition";
 
-//   card.innerHTML = `
-//     <h3 class="font-semibold text-lg mb-2">${item}</h3>
-//     <p class="text-sm text-gray-600">Premium quality</p>
-//   `;
+  card.innerHTML = `
+    <h3 class="font-semibold text-lg mb-2">${item}</h3>
+    <p class="text-sm text-gray-600">Premium quality</p>
+  `;
 
-//   inventoryGrid.appendChild(card);
-// });
+  inventoryGrid.appendChild(card);
+});

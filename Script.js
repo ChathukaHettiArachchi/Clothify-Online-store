@@ -7,7 +7,7 @@
 
 
         
-        // function for direct to inventory page
+        // direct to inventory page
         function goToInventory(category) {
     window.location.href = `inventory.html?category=${category}`;
   }
