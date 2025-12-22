@@ -25,10 +25,10 @@ const collectiontypes = document.getElementById("collectiontypes");
 const collection ={
   gents:[
     {name:"Formal Shirts", image:"images/genshirt.jpg"},
-     {name:"Casual Shirts"},
-      {name:"T-shirts"},
-       {name:"Pants"},
-       {name:"Jeans"},
+     {name:"Casual Shirts", image:"images/gencasual.jpg"},
+      {name:"T-shirts", image:"images/gentshirts.jpg"},
+       {name:"Pants", image:"images/genpants.jpg"},
+       {name:"Jeans", image:"images/genjeans.jpg"},
        {name:"Shorts"},
         {name:"Bottoms"}
        
@@ -46,6 +46,9 @@ const collection ={
   const card = document.createElement("div");
   card.className="bg-white p-4 w-40 rounded-full shadow cursor-pointer hover:shadow-xl transition h-40 bg-center bg-contain ";
   card.style.backgroundImage=`url(${item.image})`;
+  card.style.backgroundSize = "75%";
+card.style.backgroundRepeat = "no-repeat";
+card.style.backgroundPosition = "center";
   
  
 
