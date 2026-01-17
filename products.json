@@ -1,0 +1,22 @@
+{
+  "gents": {
+    "Formal Shirts": [
+      { "name": "Formal Shirt 1", "image": "images/genshirt.jpg" },
+      { "name": "Formal Shirt 2", "image": "images/genshirt.jpg" },
+       { "name": "Formal Shirt 1", "image": "images/genshirt.jpg" },
+      { "name": "Formal Shirt 2", "image": "images/genshirt.jpg" },
+       { "name": "Formal Shirt 1", "image": "images/genshirt.jpg" },
+      { "name": "Formal Shirt 2", "image": "images/genshirt.jpg" },
+      { "name": "Formal Shirt 3", "image": "images/genshirt.jpg" }
+    ],
+
+    "Casual Shirts": [
+      { "name": "Casual Shirt 1", "image": "images/gencasual.jpg" },
+      { "name": "Casual Shirt 2", "image": "images/gencasual.jpg" }
+    ],
+
+    "T-shirts": [
+      { "name": "T-Shirt 1", "image": "images/gentshirts.jpg" }
+    ]
+  }
+}

@@ -28,7 +28,7 @@ const collection ={
      {name:"Casual Shirts", image:"images/gencasual.jpg"},
       {name:"T-shirts", image:"images/gentshirts.jpg"},
        {name:"Pants", image:"images/genpants.jpg"},
-       {name:"Jeans", image:"images/genjeans.jpg"},
+       {name:"Jeans", image:"images/genjeans1.jpg"},
        {name:"Shorts"},
         {name:"Bottoms"}
        
@@ -51,6 +51,11 @@ card.style.backgroundRepeat = "no-repeat";
 card.style.backgroundPosition = "center";
   
  
+
+card.onclick =()=>{
+  window.location.href=`products.html?category=${category}&type=${item.type || item.name}`;
+}
+
 
 const text=document.createElement("p");
 text.className="text-center font-bold mt-2 text-2xl";
